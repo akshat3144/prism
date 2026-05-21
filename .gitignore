@@ -19,6 +19,9 @@ Thumbs.db
 attacks_outputs/
 read_papers.py
 explanation.md
+edit_docx.py
+patch_docx.py
+txt_to_docx.py
 
 # Project-local docs/plans and outputs
 detector_evaluation/IMPLEMENTATION_PLAN.txt
@@ -29,6 +32,7 @@ detector_evaluation/data/
 detector_evaluation/reports/
 detector_evaluation/prompts/
 detector_evaluation/papers/
+detector_evaluation/_pptx_extract/
 detector_evaluation/.env
 
 # Packaging/build artifacts
@@ -38,30 +42,22 @@ detector_evaluation/.env
 dist/
 build/
 
-characterlevelattacks/coreattacks
-characterlevelattacks/emojibased
-characterlevelattacks/humanvsai
-characterlevelattacks/stylometric
-
-
-post_generation/data/
-*.safetensors
-*.log
-post_generation/HMGC-dataset/
-
-# Post-generation large artifacts
-post_generation/outputs/
-post_generation/**/*.pth
-post_generation/**/*.pt
-post_generation/**/*.bin
-post_generation/**/*.ckpt
-post_generation/Paper.pdf
-
-# Teammate attack input files
-paired_long_*.csv
+# Data files and samples (should not be committed)
 *.csv
+*.parquet
+*.arrow
+*.json
+*.tsv
 *.docx
 *.txt
-edit_docx.py
-patch_docx.py
-txt_to_docx.py
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.log
+
+characterlevelattacks/coreattacks/
+characterlevelattacks/emojibased/
+characterlevelattacks/humanvsai/
+characterlevelattacks/stylometric/
