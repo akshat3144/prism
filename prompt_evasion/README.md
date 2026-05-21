@@ -28,12 +28,12 @@ The performance is validated using a rigorous evaluation suite implemented withi
 
 | Metric        | Goal       | Description                                                  |
 | ------------- | ---------- | ------------------------------------------------------------ |
-| Evasion Rate  | ↑ High     | Percentage of samples that successfully bypass the detector. |
-| Avg AI Score  | ↓ Low      | The raw probability score assigned by the AI detector.       |
-| BERTScore F1  | ↑ High     | Semantic similarity score to ensure meaning preservation.    |
+| Evasion Rate  | ↑ High    | Percentage of samples that successfully bypass the detector. |
+| Avg AI Score  | ↓ Low     | The raw probability score assigned by the AI detector.       |
+| BERTScore F1  | ↑ High    | Semantic similarity score to ensure meaning preservation.    |
 | Perplexity    | Balanced   | Fluency and predictability measured via GPT-2.               |
 | FK Grade      | Human-like | Flesch-Kincaid grade level to match human readability.       |
-| Persona Align | ↑ High     | Exponential negative KL-Div relative to the human profile.   |
+| Persona Align | ↑ High    | Exponential negative KL-Div relative to the human profile.   |
 
 ## Implementation & Outputs
 
@@ -66,7 +66,6 @@ prompt_evasion/
 │   ├── __init__.py
 │   ├── metrics.py          # Metric functions (AI score, perplexity, BERTScore, FK grade)
 │   └── stylometrics.py     # Stylometric feature extraction & persona management
-├── NLP_1.ipynb            # Supplementary experiments
 └── README.md               # This file
 ```
 
