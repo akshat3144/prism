@@ -1,0 +1,46 @@
+# Prism: Multi-Paradigm AI Text Evasion & Detection
+# Consolidated dependencies for all modules
+
+# Core ML/DL frameworks
+torch==2.4.1
+tensorflow==2.13.0
+transformers==4.44.2
+datasets==2.21.0
+accelerate>=0.28.0
+peft>=0.10.0
+
+# Data & numerics
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.12.0
+scikit-learn>=1.4.0
+
+# NLP & text processing
+bert-score>=0.3.13
+rouge-score>=0.1.2
+textstat>=0.7.3
+nltk==3.6.3
+spacy==3.6.1
+spacy-legacy==3.0.12
+spacy-loggers==1.0.4
+sentencepiece>=0.2.0
+tokenizers==0.13.3
+
+# Text attack & evaluation
+textattack==0.3.8
+textflint
+
+# Utilities
+tqdm>=4.66.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+huggingface-hub>=0.23.4
+PyYAML==6.0.1
+six==1.16.0
+
+# Monitoring & logging
+tensorboard==2.13.0
+wandb==0.15.9
+
+# Additional dependencies
+triton==2.0.0
